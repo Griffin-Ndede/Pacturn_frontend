@@ -1,7 +1,44 @@
 @import "tailwindcss";
+@import "@fontsource/playfair-display/400.css";
+@import "@fontsource/playfair-display/600.css";
+@import "@fontsource/playfair-display/700.css";
+
+@import "@fontsource/inter/300.css";
+@import "@fontsource/inter/400.css";
+@import "@fontsource/inter/500.css";
+@import "@fontsource/inter/600.css";
+
+@layer base {
+  html {
+    font-family: "Inter", sans-serif;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: "Playfair Display", serif;
+  }
+}
 
 @theme {
     --color-custom-navy: #1F3864; 
     --color-custom-teal: #0D6B72;
     --color-custom-gold: #B8860B; 
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-block px-6 py-3 bg-custom-navy text-white transition 
+           hover:bg-custom-gold;
+    clip-path: polygon(8% 0, 100% 0, 92% 100%, 0% 100%);
+  }
+   .btn-secondary {
+    @apply inline-block px-6 py-2 bg-custom-gold text-white transition 
+           hover:bg-custom-navy;
+    clip-path: polygon(8% 0, 100% 0, 92% 100%, 0% 100%);
+  }
+
+   .btn-outline {
+    @apply block px-6 py-2 bg-white text-custom-navy font-medium transition
+           hover:bg-custom-navy hover:text-white;
+    clip-path: polygon(8% 0, 100% 0, 92% 100%, 0% 100%);
+  }
 }
