@@ -2,37 +2,21 @@ import Footer from "../Components/Footer";
 import Navbar from "../Components/Navbar";
 import { Link } from "react-router";
 import { ArrowRight , Mail, Phone} from "lucide-react";
+import { services } from "../data/services";
 
 function Home() {
-    const services = [
-        {
-            title: "Pension Trustee",
-            description:
-                "Independent fiduciary oversight for pension schemes, ensuring compliance, governance, and protection of member interests.",
-        },
-        {
-            title: "Collective Investment Schemes",
-            description:
-                "Trustee services for CIS structures, providing independent supervision of fund managers and safeguarding investor assets.",
-        },
-        {
-            title: "REIT Trustee",
-            description:
-                "Specialised trustee services for real estate investment trusts, ensuring regulatory compliance and investor protection.",
-        },
-    ];
-
+const servicesdisplayed = services.slice(0, 3);
     return (
         <>
             <Navbar />
-            <section className="w-full md:h-[80vh] h-fit flex items-center justify-center bg-white md:bg-transparent">
+            <section className="w-full md:h-[90vh] h-fit flex items-center justify-center bg-white md:bg-transparent">
                 <div className="relative w-full h-full flex items-center overflow-hidden">
                     {/* Background Image (ONLY md and above) */}
                     <div
                         className="hidden md:block absolute inset-0 bg-cover bg-center scale-105"
                         style={{
                             backgroundImage:
-                                "url('https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=1600')",
+                                "url('https://cdn.prod.website-files.com/670543794cce277c5f8c849c/670d256b7783d72adf9547cd_Untitled%20(76).png')",
                         }}
                     />
                     {/* Overlay (ONLY md and above) */}
@@ -52,9 +36,7 @@ function Home() {
                         <div className="flex justify-center md:justify-start">
                             <Link
                                 to="/services"
-                                className="inline-block px-8 py-3 border border-custom-navy bg-custom-navy text-white font-light
-             [clip-path:polygon(8%_0,100%_0,92%_100%,0%_100%)] 
-             transition hover:bg-custom-navy hover:text-white"
+                                className="btn-primary hover:bg-custom-gold inline-flex items-center gap-3 font-light"
                             >
                                 Explore our services
                             </Link>
@@ -83,10 +65,10 @@ function Home() {
                     {/* Services Grid */}
                     <div className="grid md:grid-cols-3 gap-12">
 
-                        {services.map((service, index) => (
+                        {servicesdisplayed.map((service, index) => (
                             <div
                                 key={index}
-                                className="border border-gray-200 p-8 hover:border-custom-gold transition-all duration-300"
+                                className="border border-gray-200 p-8 rounded-3xl hover:border-custom-gold transition-all duration-300"
                             >
                                 <h3 className="text-lg font-semibold text-custom-navy mb-4">
                                     {service.title}
@@ -142,7 +124,7 @@ function Home() {
 
                         <Link
                             to="/research-desk"
-                            className="btn-primary mt-10 inline-flex items-center gap-3 font-light"
+                            className="btn-primary bg-custom-teal hover:bg-custom-gold mt-10 inline-flex items-center gap-3 font-light"
                         >
                             Visit the Research Desk
                             <ArrowRight size={16} />
@@ -154,7 +136,7 @@ function Home() {
                     <div className="md:col-span-6 order-1 md:order-2">
                         <div className="relative">
                             <img
-                                src="https://s3.us-east-2.amazonaws.com/files.fisher.osu.edu/department-finance/public/styles/panopoly_image_original/public/research.jpg"
+                                src="https://globallawexperts.com/wp-content/uploads/2022/10/colleagues-are-stress-talking-about-the-finance-re-2022-12-16-03-39-19-utc-scaled.jpg"
                                 alt="Open journal symbolising the Pacturn Research Desk"
                                 className="w-full h-full object-cover border border-gray-100"
                                 loading="lazy"
@@ -197,7 +179,7 @@ function Home() {
 
                     {/* Right CTA Panel */}
                     <div className="md:col-span-5">
-                        <div className="border border-gray-200 p-10 bg-gray-50">
+                        <div className="border border-gray-200 p-10 bg-gray-50 rounded-3xl">
                             <p className="text-2xl text-custom-gold mb-6">
                                 Submit an Enquiry
                             </p>

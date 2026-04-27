@@ -35,9 +35,8 @@ function Navbar() {
                             <Link to="/research-desk" className="hover:text-custom-gold">Research Desk</Link>
                         </li>
                     </ul>
-
                     <div>
-                        <Link to="/contact" className="hidden md:block btn-primary">Contact</Link>
+                        <Link to="/contact" className="hidden md:block btn-primary font-light">Contact</Link>
                     </div>
 
                     {/* Mobile Toggle */}
