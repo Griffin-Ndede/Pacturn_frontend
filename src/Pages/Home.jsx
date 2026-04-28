@@ -189,7 +189,7 @@ const servicesdisplayed = services.slice(0, 3);
                             </p>
                             <Link
                                 to="/contact"
-                                className="btn-primary w-full text-center justify-center"
+                                className="btn-primary w-fit mx-auto  text-center justify-center"
                             >
                                 Contact Us
                             </Link>
