@@ -57,7 +57,7 @@ function Services() {
                     {services.map((service, index) => (
                         <div
                             key={index}
-                            className="grid md:grid-cols-12 gap-12 py-20 border-b last:border-none items-center"
+                            className="grid md:grid-cols-12 gap-12 py-20 border-b-2 border-custom-gold last:border-none items-center"
                         >
 
                             {/* TEXT */}

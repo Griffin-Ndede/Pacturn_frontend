@@ -13,32 +13,33 @@
     font-family: "Inter", sans-serif;
   }
 
-  h1, h2, h3, h4 {
+  h1,
+  h2,
+  h3,
+  h4 {
     font-family: "Playfair Display", serif;
   }
 }
 
 @theme {
-    --color-custom-navy: #1F3864; 
-    --color-custom-teal: #0D6B72;
-    --color-custom-gold: #B8860B; 
+  --color-custom-navy: #1F3864;
+  --color-custom-teal: #0D6B72;
+  --color-custom-gold: #B8860B;
 }
 
 @layer components {
   .btn-primary {
-    @apply inline-block px-6 py-2 bg-custom-navy text-white transition 
-           hover:bg-custom-gold rounded-3xl;
-    /* clip-path: polygon(8% 0, 100% 0, 92% 100%, 0% 100%); */
-  }
-   .btn-secondary {
-    @apply inline-block px-6 py-2 bg-custom-gold text-white transition 
-           hover:bg-custom-navy rounded-3xl;
-    /* clip-path: polygon(8% 0, 100% 0, 92% 100%, 0% 100%); */
+    @apply inline-block px-6 py-2 bg-custom-navy text-white transition hover:bg-custom-gold;
+    clip-path: polygon(0% 0, 100% 0, 90% 100%, 10% 100%);
   }
 
-   .btn-outline {
-    @apply block px-6 py-2 bg-white text-custom-navy font-medium transition
-           hover:bg-custom-navy hover:text-white rounded-3xl;
-    /* clip-path: polygon(8% 0, 100% 0, 92% 100%, 0% 100%); */
+  .btn-secondary {
+    @apply inline-block px-6 py-2 bg-custom-gold text-white transition hover:bg-custom-navy;
+    clip-path: polygon(0% 0, 100% 0, 90% 100%, 10% 100%);
+  }
+
+  .btn-outline {
+    @apply block px-6 py-2 bg-white text-custom-navy font-medium transition hover:bg-custom-navy hover:text-white rounded-3xl;
+    clip-path: polygon(0% 0, 100% 0, 90% 100%, 10% 100%);
   }
 }
