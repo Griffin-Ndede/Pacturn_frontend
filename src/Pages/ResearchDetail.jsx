@@ -4,6 +4,7 @@ import { ArrowLeft, Link2, Check, Clock, User } from "lucide-react";
 import { papers } from "../data/researchDeskData";
 import Navbar from "../Components/Navbar";
 import { Link } from "react-router";
+import Footer from "../Components/Footer";
 
 
 
@@ -99,7 +100,7 @@ function RelatedPapers({ current, allPapers }) {
   if (!related.length) return null;
 
   return (
-    <section className="border-t border-teal-100 pt-16 pb-20 max-w-3xl mx-auto px-6">
+    <section className="border-t border-teal-100 pt-16 pb-26 max-w-3xl mx-auto px-6">
       <h3 className="text-xs uppercase tracking-[0.3em] text-custom-navy mb-8 font-medium">
         Continue Reading
       </h3>
@@ -316,6 +317,7 @@ export default function ResearchDetail() {
 
       {/* ── RELATED PAPERS ── */}
       <RelatedPapers current={paper} allPapers={papers} />
+      <Footer/>
     </>
   );
 }

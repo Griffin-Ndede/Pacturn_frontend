@@ -14,7 +14,7 @@ function Navbar() {
                     {/* Logo */}
                     <Link to="/">
                         <img
-                            src="public/images/Pacturn horizontal logo_1.png"
+                            src="/public/images/Pacturn horizontal logo_1.png"
                             alt="Pacturn Logo"
                             className="h-10 w-auto"
                         />
