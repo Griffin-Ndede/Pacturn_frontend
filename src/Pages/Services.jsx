@@ -1,7 +1,6 @@
 import Footer from "../Components/Footer";
 import Navbar from "../Components/Navbar";
 import { services } from "../data/services";
-import { Link } from "react-router";
 
 function Services() {
     return (
@@ -30,22 +29,17 @@ function Services() {
                         Services
                     </h1>
 
-                    <p className="font-light text-2xl md:text-3xl mt-6 leading-tight max-w-2xl mx-auto">
+                    <p className="font-regular text-xl md:text-2xl mt-6 leading-tight max-w-2xl mx-auto">
                         Trustee and fiduciary services across regulated structures.
                     </p>
 
                     <div className="w-32 h-0.5 bg-custom-gold mx-auto mt-6" />
 
-                    <p className="font-light text-lg md:text-xl mt-8 max-w-3xl mx-auto text-white">
+                    <p className="font-light text-lg md:text-xl mt-8 max-w-3xl mx-auto text-white leading-loose">
                         Pacturn Africa provides independent trustee and fiduciary services
                         across pension schemes, investment structures, corporate transactions,
-                        and private trusts.
+                        and private trusts. Delivered with institutional discipline and regulatory alignment.
                     </p>
-
-                    <p className="font-light mt-10 max-w-2xl mx-auto text-white">
-                        Delivered with institutional discipline and regulatory alignment.
-                    </p>
-
                 </div>
 
             </section>

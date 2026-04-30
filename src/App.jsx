@@ -4,6 +4,7 @@ import AboutUs from "./Pages/AboutUs"
 import Services from "./Pages/Services"
 import Contact from "./Pages/Contact"
 import ResearchDesk from "./Pages/ResearchDesk"
+import ResearchDetail from "./Pages/ResearchDetail"
 
 function App() {
   const router = createBrowserRouter([
@@ -26,6 +27,10 @@ function App() {
      {
       path: "/research-desk", 
       element: <ResearchDesk/>
+    },
+    {
+      path: "/research/:slug",
+      element: <ResearchDetail />
     }
   ]);
 
