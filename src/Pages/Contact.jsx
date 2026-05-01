@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
+import { Mail, Phone, MapPin } from "lucide-react";
 
 function Contact() {
   const [form, setForm] = useState({
@@ -33,16 +34,16 @@ function Contact() {
 
       {/* HERO */}
       <section className="pt-36 pb-16 max-w-4xl mx-auto px-6 text-center">
-        <p className="text-xs uppercase tracking-[0.3em] text-custom-teal">
-          Contact
+        <p className="text-lg uppercase tracking-[0.3em] text-custom-teal">
+          Get in touch with us!
         </p>
 
         <h1 className="text-4xl md:text-5xl font-heading text-custom-navy mt-6 leading-tight">
-          Get in touch with us!
+          Contact Pacturn Africa
         </h1>
 
         <p className="mt-6 text-gray-600 font-light leading-relaxed max-w-2xl mx-auto">
-          For research inquiries, collaborations, institutional partnerships, or media requests, we welcome thoughtful communication.
+          For trustee appointments, institutional referrals, and regulatory engagement.
         </p>
       </section>
 
@@ -61,32 +62,48 @@ function Contact() {
             />
           </div>
 
-          <div>
-            <h3 className="text-xs uppercase tracking-widest text-gray-400 mb-3">
-              General Inquiries
-            </h3>
-            <p className="text-gray-700 font-light">
-              research@yourcompany.com
-            </p>
-          </div>
+       <div className="space-y-8">
 
-          <div>
-            <h3 className="text-xs uppercase tracking-widest text-gray-400 mb-3">
-              Partnerships
-            </h3>
-            <p className="text-gray-700 font-light">
-              partnerships@yourcompany.com
-            </p>
-          </div>
+  {/* Email */}
+  <div className="flex items-start gap-3">
+    <Mail className="w-5 h-5 text-custom-teal mt-1" />
+    <div>
+      <p className="text-sm uppercase tracking-[0.2em] text-custom-teal mb-1">
+        Email
+      </p>
+      <p className="text-base text-custom-navy font-light">
+        info@pacturn.africa
+      </p>
+    </div>
+  </div>
 
-          <div>
-            <h3 className="text-xs uppercase tracking-widest text-gray-400 mb-3">
-              Response Time
-            </h3>
-            <p className="text-gray-700 font-light">
-              We typically respond within 2–3 business days.
-            </p>
-          </div>
+  {/* Phone */}
+  <div className="flex items-start gap-3">
+    <Phone className="w-5 h-5 text-custom-teal mt-1" />
+    <div>
+      <p className="text-sm uppercase tracking-[0.2em] text-custom-teal mb-1">
+        Phone
+      </p>
+      <p className="text-base text-custom-navy font-light">
+        +254 xxx xxx xxxx
+      </p>
+    </div>
+  </div>
+
+  {/* Location */}
+  <div className="flex items-start gap-3">
+    <MapPin className="w-5 h-5 text-custom-teal mt-1" />
+    <div>
+      <p className="text-sm uppercase tracking-[0.2em] text-custom-teal mb-1">
+        Location
+      </p>
+      <p className="text-base text-custom-navy font-light">
+        Nairobi, Kenya
+      </p>
+    </div>
+  </div>
+
+</div>
         </div>
 
         {/* RIGHT SIDE FORM */}
@@ -157,15 +174,22 @@ function Contact() {
 
               <button
                 type="submit"
-                className="w-full mt-4 bg-custom-navy text-white py-3 rounded-xl hover:bg-custom-teal transition-all duration-300"
+                className="btn-primary w-fit flex mx-auto  mt-4 hover:cursor-pointer transition-all duration-300"
               >
                 Submit Inquiry
               </button>
 
             </form>
           </div>
+
         </div>
+      
       </section>
+        <div className="max-w-4xl mx-auto px-6 pb-10 text-center">
+        <p className="text-base font-light text-custom-navy">
+          All correspondence is treated with confidentiality and institutional discretion.
+        </p>
+      </div>
       <Footer />
     </>
   );

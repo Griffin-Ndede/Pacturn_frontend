@@ -25,21 +25,21 @@ function Services() {
                 {/* Content */}
                 <div className="relative max-w-4xl mx-auto px-6 text-center text-white">
 
-                    <h1 className="text-4xl md:text-6xl text-custom-gold">
-                        Services
+                    <h1 className="text-4xl md:text-6xl text-custom-gold mb-10">
+                        Mandates we accept
                     </h1>
 
-                    <p className="font-regular text-xl md:text-2xl mt-6 leading-tight max-w-2xl mx-auto">
-                        Trustee and fiduciary services across regulated structures.
+                    <p className="font-light text-xl md:text-2xl mt-6 max-w-4xl mx-auto leading-loose">
+                        We do not "offer services" in the conventional sense. We accept appointment as fiduciary. Each mandate carries defined legal duties and accountability.
                     </p>
-
+                    {/* 
                     <div className="w-32 h-0.5 bg-custom-gold mx-auto mt-6" />
 
                     <p className="font-light text-lg md:text-xl mt-8 max-w-3xl mx-auto text-white leading-loose">
                         Pacturn Africa provides independent trustee and fiduciary services
                         across pension schemes, investment structures, corporate transactions,
                         and private trusts. Delivered with institutional discipline and regulatory alignment.
-                    </p>
+                    </p> */}
                 </div>
 
             </section>
@@ -69,9 +69,9 @@ function Services() {
                                 <p className="font-light mt-6">
                                     {service.description}
                                 </p>
-                                <p className="font-light mt-4">
+                                {/* <p className="font-light mt-4">
                                     {service.details}
-                                </p>
+                                </p> */}
                                 <ul className="mt-6 space-y-2">
                                     {service.features.map((feature, i) => (
                                         <li key={i} className="font-light text-custom-gold">

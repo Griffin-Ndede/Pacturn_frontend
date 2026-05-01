@@ -3,14 +3,14 @@ export const services = [
     title: "Pension Scheme Trustee",
     category: "Trustee Services",
     description:
-      "Independent fiduciary oversight for occupational and personal pension schemes across regulated jurisdictions.",
+      "We act as corporate trustee to occupational retirement benefit schemes",
     details:
       "Pacturn Africa acts as an independent trustee to pension schemes, ensuring that governance frameworks, regulatory obligations, and fiduciary duties are upheld. The role is executed with strict separation from fund managers, custodians, and sponsors, ensuring that member interests remain the primary consideration in all decisions.",
     features: [
-      "Oversight of scheme governance and trustee board processes",
-      "Monitoring of fund manager performance and compliance",
-      "Regulatory reporting and alignment with pension authorities",
-      "Protection of member rights and benefit structures",
+      "Oversight of scheme governance",
+      "Monitoring of fund manager performance and administrators",
+      "Enforcement of compliance with trust deed and regulation",
+      "Protection of memebr interests",
     ],
     cta: {
       label: "Learn More",
@@ -24,14 +24,13 @@ export const services = [
     title: "Collective Investment Schemes Trustee",
     category: "Trustee Services",
     description:
-      "Independent supervision of collective investment structures and fund managers.",
+      "We provide independent oversight of regulated investment structures",
     details:
       "We provide trustee services to collective investment schemes, ensuring that fund managers operate within defined mandates and regulatory frameworks. Pacturn Africa safeguards investor assets through independent oversight, ensuring transparency, compliance, and adherence to fiduciary obligations.",
     features: [
-      "Independent monitoring of fund managers",
-      "Compliance oversight with CIS regulations",
-      "Protection of investor assets and interests",
-      "Review of scheme documentation and mandates",
+      "Monitoring compliance with fund mandate",
+      "Safeguarding investor interests",
+      "Escalating breaches and enforcing corrective action",
     ],
     cta: {
       label: "Learn More",
@@ -45,14 +44,13 @@ export const services = [
     title: "REIT Trustee",
     category: "Trustee Services",
     description:
-      "Specialised trustee services for real estate investment trusts.",
+      "We act as trustee to real estate investment structures",
     details:
       "Pacturn Africa provides trustee services to REIT structures, ensuring compliance with regulatory requirements and protection of unit holder interests. The role includes oversight of asset managers, monitoring of distributions, and ensuring adherence to trust deeds and listing requirements.",
     features: [
-      "Oversight of REIT managers and operators",
-      "Monitoring of income distributions and compliance",
-      "Alignment with capital markets regulations",
-      "Protection of investor rights within trust structures",
+      "Governance oversight of REIT operations",
+      "Compliance monitoring",
+      "Investor protection",
     ],
     cta: {
       label: "Learn More",
@@ -66,14 +64,13 @@ export const services = [
     title: "Escrow and Transactional Mandates",
     category: "Corporate Services",
     description:
-      "Independent escrow arrangements for structured transactions.",
+      "We act as independent holder of funds pending satisfaction of contractual conditions",
     details:
       "We act as an independent escrow agent, holding funds, documents, or assets in trust pending the fulfilment of agreed contractual conditions. This ensures neutrality, security, and transparency in corporate and financial transactions.",
     features: [
-      "Secure holding of funds and transactional assets",
-      "Defined release conditions and milestone tracking",
-      "Neutral third-party oversight",
-      "Support for mergers, acquisitions, and structured deals",
+      "Contolled receipt and release of funds",
+      "Verification of conditions precedent",
+      "Maintenance of full audit trail",
     ],
     cta: {
       label: "Learn More",
@@ -87,14 +84,13 @@ export const services = [
     title: "Employee Share Ownership Plans (ESOP) Trustee",
     category: "Corporate Services",
     description:
-      "Trustee services for employee share ownership structures.",
+      "We act as trustee for employee share ownership plans",
     details:
       "Pacturn Africa administers ESOP structures, ensuring proper governance, allocation, and long-term alignment between employees and corporate sponsors. The trustee role ensures transparency and fairness in the management of employee-owned equity.",
     features: [
-      "Administration of employee share trust structures",
-      "Governance and compliance oversight",
-      "Alignment of employee and corporate interests",
-      "Transparent allocation and reporting processes",
+      "Holding shares on behalf of beneficiaries",
+      "Overseeing vesting and distribution",
+      "Ensuring plan integrity",
     ],
     cta: {
       label: "Learn More",
@@ -105,17 +101,16 @@ export const services = [
   },
 
   {
-    title: "Estate Planning & Private Trusts",
+    title: "Private trust structures",
     category: "Private Client",
     description:
-      "Structured trust solutions for wealth preservation and succession.",
+      "We provide trustee sercices for family and corporate structures",
     details:
       "We establish and administer private trusts for individuals and families, supporting wealth structuring, succession planning, and cross-generational asset protection. Each structure is designed with legal clarity and long-term governance in mind.",
     features: [
-      "Trust structuring for succession planning",
-      "Long-term asset protection strategies",
-      "Cross-jurisdictional trust administration",
-      "Confidential and compliant fiduciary oversight",
+      "Administration of trust arrangments",
+      "Asset protection structures",
+      "Succession planning support",
     ],
     cta: {
       label: "Learn More",
@@ -126,17 +121,16 @@ export const services = [
   },
 
   {
-    title: "Private Trust Structures",
+    title: "Governance advisory",
     category: "Private Client",
     description:
-      "Structured trust solutions for wealth preservation and succession.",
+      "We advise boards and institutions on fiduciary governance",
     details:
       "We establish and administer private trusts for individuals and families, supporting wealth structuring, succession planning, and cross-generational asset protection. Each structure is designed with legal clarity and long-term governance in mind.",
     features: [
-      "Training on fiduciary duties and responsibilities",
-      "Governance and compliance frameworks",
-      "Workshops for trustee boards and institutions",
-      "Regulatory awareness and updates",
+      "Trustee training",
+      "Governance frameworks",
+      "Compliance reviews",
     ],
     cta: {
       label: "View Programmes",
