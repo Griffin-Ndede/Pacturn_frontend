@@ -1,6 +1,6 @@
 export const services = [
   {
-    title: "Pension Trustee",
+    title: "Pension Scheme Trustee",
     category: "Trustee Services",
     description:
       "Independent fiduciary oversight for occupational and personal pension schemes across regulated jurisdictions.",
@@ -21,7 +21,7 @@ export const services = [
   },
 
   {
-    title: "Collective Investment Schemes",
+    title: "Collective Investment Schemes Trustee",
     category: "Trustee Services",
     description:
       "Independent supervision of collective investment structures and fund managers.",
@@ -63,7 +63,7 @@ export const services = [
   },
 
   {
-    title: "Escrow Services",
+    title: "Escrow and Transactional Mandates",
     category: "Corporate Services",
     description:
       "Independent escrow arrangements for structured transactions.",
@@ -84,7 +84,7 @@ export const services = [
   },
 
   {
-    title: "Employee Share Ownership Plans (ESOP)",
+    title: "Employee Share Ownership Plans (ESOP) Trustee",
     category: "Corporate Services",
     description:
       "Trustee services for employee share ownership structures.",
@@ -126,12 +126,12 @@ export const services = [
   },
 
   {
-    title: "Trustee Training",
-    category: "Advisory",
+    title: "Private Trust Structures",
+    category: "Private Client",
     description:
-      "Capacity building for trustees and institutional stakeholders.",
+      "Structured trust solutions for wealth preservation and succession.",
     details:
-      "Pacturn Africa delivers structured training programmes designed to strengthen trustee competence, governance awareness, and regulatory understanding. The programmes are tailored for boards, institutions, and fiduciary professionals.",
+      "We establish and administer private trusts for individuals and families, supporting wealth structuring, succession planning, and cross-generational asset protection. Each structure is designed with legal clarity and long-term governance in mind.",
     features: [
       "Training on fiduciary duties and responsibilities",
       "Governance and compliance frameworks",
@@ -146,24 +146,24 @@ export const services = [
       "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg",
   },
 
-  {
-    title: "Governance Advisory",
-    category: "Advisory",
-    description:
-      "Advisory on governance structures and fiduciary frameworks.",
-    details:
-      "We provide advisory services to institutions seeking to strengthen governance frameworks, fiduciary structures, and regulatory alignment. Our role is to bring clarity, structure, and discipline to complex institutional environments.",
-    features: [
-      "Governance framework design and review",
-      "Fiduciary structuring and advisory",
-      "Regulatory compliance alignment",
-      "Institutional risk and oversight advisory",
-    ],
-    cta: {
-      label: "Learn More",
-      link: "/services/governance",
-    },
-    image:
-      "https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg",
-  },
+  // {
+  //   title: "Governance Advisory",
+  //   category: "Advisory",
+  //   description:
+  //     "Advisory on governance structures and fiduciary frameworks.",
+  //   details:
+  //     "We provide advisory services to institutions seeking to strengthen governance frameworks, fiduciary structures, and regulatory alignment. Our role is to bring clarity, structure, and discipline to complex institutional environments.",
+  //   features: [
+  //     "Governance framework design and review",
+  //     "Fiduciary structuring and advisory",
+  //     "Regulatory compliance alignment",
+  //     "Institutional risk and oversight advisory",
+  //   ],
+  //   cta: {
+  //     label: "Learn More",
+  //     link: "/services/governance",
+  //   },
+  //   image:
+  //     "https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg",
+  // },
 ];

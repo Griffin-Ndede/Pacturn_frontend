@@ -1,15 +1,35 @@
 import Footer from "../Components/Footer";
 import Navbar from "../Components/Navbar";
 import { Link } from "react-router";
-import { ArrowRight , Mail, Phone} from "lucide-react";
+import { ArrowRight, Mail, Phone } from "lucide-react";
 import { services } from "../data/services";
 
 function Home() {
-const servicesdisplayed = services.slice(0, 3);
+    const servicesdisplayed = services.slice();
+
+    const principles = [
+        {
+            number: "01",
+            title: "Clear Separation of Roles",
+            description: "We do not sit on both sides of a transaction.",
+        },
+        {
+            number: "02",
+            title: "Unambiguous Fiduciary Duty",
+            description:
+                "Where interests diverge, we act in the interests of beneficiaries.",
+        },
+        {
+            number: "03",
+            title: "Evidence-Based Governance",
+            description:
+                "All decisions are documented, minuted, and available for inspection.",
+        },
+    ];
     return (
         <>
             <Navbar />
-            <section className="w-full md:h-[90vh] h-fit flex items-center justify-center bg-white md:bg-transparent">
+            <section className="w-full md:h-[75vh] h-fit flex items-center justify-center bg-white md:bg-transparent">
                 <div className="relative w-full h-full flex items-center overflow-hidden">
                     {/* Background Image (ONLY md and above) */}
                     <div
@@ -21,49 +41,90 @@ const servicesdisplayed = services.slice(0, 3);
                     />
                     {/* Overlay (ONLY md and above) */}
                     <div className="hidden md:block absolute inset-0 bg-linear-to-r from-white via-white/80 to-transparent" />
-
                     {/* Content */}
-                    <div className="relative max-w-7xl mx-auto py-16 md:py-24 md:px-0 px-6 md:mt-0 mt-24 text-center md:text-left">
+                    <div className="relative max-w-7xl py-16 md:py-24 px-6 md:mt-0 mt-24 md:ml-36 text-left">
 
-                        <h1 className="mx-auto md:mx-0 md:w-1/2 text-3xl md:text-5xl text-custom-navy leading-tight mb-6">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, ducimus.
+                        <h1 className="w-full md:w-1/2 text-4xl md:text-6xl text-custom-navy leading-tight mb-2">
+                            Independent by design.
                         </h1>
-
-                        <p className="text-lg font-light leading-relaxed mb-8 max-w-xl mx-auto md:mx-0">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste soluta reiciendis dolorum harum labore enim animi minus repellat at excepturi? Laudantium dolores delectus facilis minus sunt totam.
+                        <p className="text-lg text-custom-navy leading-relaxed mb-10 max-w-xl font-semibold">
+                            A corporate trustee institution with no affiliated interests.
+                        </p>
+                        <p className="text-base font-light leading-relaxed mb-8 max-w-2xl text-custom-navy font-light">
+                            Pacturn Africa acts as fiduciary to pension schemes, investment structures, and corporate
+                            mandates. <span className="font-semibold text-custom-gold">We do not manage assets. We do not custody assets. We do not lend. We act only as trustee.</span>
+                            That distinction defines every decision we make.
                         </p>
 
-                        <div className="flex justify-center md:justify-start">
+                        <div className="grid grid-cols-1 md:grid-cols-2">
+                            <Link
+                                to="/contact"
+                                className="btn-primary font-light w-fit  md:mx-0 mx-auto"
+                            >
+                                Contact Pacturn Africa
+                            </Link>
                             <Link
                                 to="/services"
-                                className="btn-primary hover:bg-custom-gold inline-flex items-center gap-3 font-light"
+                                className="btn-outline font-light w-fit  md:mx-0 mx-auto"
                             >
                                 Explore our services
                             </Link>
                         </div>
                     </div>
-
                 </div>
             </section>
+            <section className="w-full bg-gray-50 py-20">
+                <div className="max-w-7xl mx-auto px-6">
+                    {/* Header */}
+                    <div className="max-w-3xl mb-12 mx-auto text-center">
+                        <h2 className="text-3xl md:text-4xl text-custom-navy mb-4">
+                            Institutional Statement
+                        </h2>
+                        <p className="text-lg text-custom-navy font-light leading-relaxed">
+                            In Kenya and across the region, most corporate trustees are affiliated with commercial banks.
+                            The same institution that manages, custodies, or lends against assets often acts as trustee.
+                            This creates a structural conflict.
+                            <br /><br />
+                            <span className="font-semibold text-custom-navy">
+                                Pacturn Africa was established to remove it.
+                            </span>
+                        </p>
+                    </div>
 
+                    {/* Practice Section */}
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+                        {principles.map((item, index) => (
+                            <div key={index}>
+                                <span className="text-lg text-custom-gold font-semibold mb-2 block">
+                                    {item.number}
+                                </span>
+                                <h3 className="text-xl font-semibold text-custom-navy mb-2">
+                                    {item.title}
+                                </h3>
+                                <p className="leading-relaxed font-light text-custom-navy">
+                                    {item.description}
+                                </p>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
             <section className="py-20 bg-white">
                 <div className="max-w-7xl mx-auto px-6">
-
                     {/* Section Heading */}
                     <div className="mb-14 max-w-2xl">
                         <h2 className="text-3xl md:text-4xl font-semibold text-custom-navy mb-4">
-                            Our Services
+                            Service lines
                         </h2>
                         <div className="w-16 h-0.5 bg-custom-gold mb-6"></div>
 
                         <p className="text-gray-600 leading-relaxed">
-                            Pacturn Africa provides independent trustee and fiduciary services
-                            across a range of regulated financial structures.
+                            We accept appointment across the following mandates
                         </p>
                     </div>
 
                     {/* Services Grid */}
-                    <div className="grid md:grid-cols-3 gap-12">
+                    <div className="grid md:grid-cols-3 gap-6">
 
                         {servicesdisplayed.map((service, index) => (
                             <div
@@ -111,22 +172,20 @@ const servicesdisplayed = services.slice(0, 3);
                         </h1>
 
                         <p className="font-light mt-4">
-                            A standing programme of trustee thought, written for the institutional reader.
+                            The instutions that appoint trustees read governance.
                         </p>
 
                         <div className="w-16 h-0.5 bg-custom-gold mt-6" />
 
                         <p className="font-light text-lg mt-8">
-                            The Pacturn Africa Research Desk publishes structured papers on trusteeship,
-                            governance, and African capital markets — concise, source-disciplined, and
-                            freely accessible to institutional stakeholders.
+                            Our research desk publishes original analysis on fiduciary practice across African markets.
                         </p>
 
                         <Link
                             to="/research-desk"
-                            className="btn-primary bg-custom-teal hover:bg-custom-gold mt-10 inline-flex items-center gap-3 font-light"
+                            className="btn-primary bg-custom-teal hover:bg-custom-gold flex w-fit items-center mt-10 gap-3 font-light"
                         >
-                            Visit the Research Desk
+                            Access Research Desk
                             <ArrowRight size={16} />
                         </Link>
 
@@ -156,13 +215,11 @@ const servicesdisplayed = services.slice(0, 3);
                             Contact us
                         </h2>
                         <p className="font-light mt-4">
-                            Engage with Pacturn Africa
+                            For trustee appointments, referrals, or institutional engagement.
                         </p>
                         <div className="w-16 h-0.5 bg-custom-gold mt-6" />
-                        <p className="font-light mt-8 max-w-xl">
-                            For institutional enquiries, fiduciary appointments, and partnership discussions,
-                            please contact us through the channels below. All communications are handled
-                            with confidentiality and professional discretion.
+                        <p className="font-bold mt-8 max-w-xl">
+                           Contact Pacturn Africa
                         </p>
                         {/* Contact details */}
                         <div className="mt-10 space-y-5">

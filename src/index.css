@@ -37,7 +37,7 @@
   }
 
    .btn-outline {
-    @apply block px-6 py-2 bg-white text-custom-navy font-medium transition
+    @apply block px-6 py-2 bg-custom-gold text-white font-medium transition
            hover:bg-custom-navy hover:text-white ;
     clip-path: polygon(8% 0, 100% 0, 92% 100%, 0% 100%);
   }
