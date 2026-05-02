@@ -197,7 +197,7 @@ function Home() {
                             <img
                                 src="https://globallawexperts.com/wp-content/uploads/2022/10/colleagues-are-stress-talking-about-the-finance-re-2022-12-16-03-39-19-utc-scaled.jpg"
                                 alt="Open journal symbolising the Pacturn Research Desk"
-                                className="w-full h-full object-cover border border-gray-100"
+                                className="w-full h-full object-cover rounded-3xl shadow-3xl"
                                 loading="lazy"
                             />
                             <div className="hidden md:block absolute -bottom-6 -left-6 btn-secondary px-6 py-4 text-sm font-light">
