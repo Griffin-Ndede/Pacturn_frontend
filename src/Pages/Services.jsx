@@ -59,13 +59,14 @@ function Services() {
                                 className={`md:col-span-7 ${index % 2 !== 0 ? "md:order-2" : "md:order-1"
                                     }`}
                             >
-                                <h1 className="font-light text-3xl mt-">
+                                <h1 className="font-light text-3xl mb-2">
                                     {service.title}
                                 </h1>
+                                                                <div className="w-20 h-0.5 bg-custom-gold" />
+
                                 <p className="text-sm font-light text-white bg-custom-gold inline-block mt-4 px-3 py-1 rounded-full">
                                     {service.category}
                                 </p>
-                                <div className="w-12 h-0.5 bg-custom-gold mt-5" />
                                 <p className="font-light mt-6">
                                     {service.description}
                                 </p>
@@ -95,6 +96,7 @@ function Services() {
                                 <img
                                     src={service.image}
                                     alt={service.title}
+                                    loading="lazy"
                                     className="w-fit h-96 rounded-3xl object-cover border border-gray-200"
                                 />
                             </div>
