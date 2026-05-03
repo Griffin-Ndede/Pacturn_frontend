@@ -106,7 +106,7 @@ function AboutUs() {
                 "Objective decision-making in contested situations.",
               ].map((item, index) => (
                 <div key={index}>
-                  <span className="text-sm text-custom-gold font-semibold mb-2 block">
+                  <span className="text-sm font-light text-white mb-2 block bg-custom-gold w-fit rounded-full p-3">
                     {String(index + 1).padStart(2, "0")}
                   </span>
                   <p className="text-base text-gray-700 leading-relaxed font-light">

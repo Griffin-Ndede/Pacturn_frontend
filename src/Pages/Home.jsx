@@ -50,13 +50,13 @@ function Home() {
                         <p className="text-lg text-custom-navy leading-relaxed mb-10 max-w-xl font-semibold">
                             A corporate trustee institution with no affiliated interests.
                         </p>
-                        <p className="text-base font-light leading-relaxed mb-8 max-w-2xl text-custom-navy font-light">
+                        <p className="text-base leading-relaxed mb-8 max-w-2xl text-custom-navy font-light">
                             Pacturn Africa acts as fiduciary to pension schemes, investment structures, and corporate
                             mandates. <span className="font-semibold text-custom-gold">We do not manage assets. We do not custody assets. We do not lend. We act only as trustee.</span>
                             That distinction defines every decision we make.
                         </p>
 
-                        <div className="grid grid-cols-1 md:grid-cols-2">
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                             <Link
                                 to="/contact"
                                 className="btn-primary font-light w-fit  md:mx-0 mx-auto"
