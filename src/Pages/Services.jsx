@@ -20,7 +20,7 @@ function Services() {
                 />
 
                 {/* Overlay (very important for readability) */}
-                <div className="absolute inset-0 bg-custom-navy/90" />
+                <div className="absolute inset-0 bg-custom-navy/75" />
 
                 {/* Content */}
                 <div className="relative max-w-4xl mx-auto px-6 text-center text-white">
