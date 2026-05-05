@@ -5,7 +5,7 @@ import { ArrowRight, Mail, Phone } from "lucide-react";
 import { services } from "../data/services";
 
 function Home() {
-    const servicesdisplayed = services.slice(0, 3);
+    const servicesdisplayed = services.slice(0, 6);
 
     const principles = [
         {
