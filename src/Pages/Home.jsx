@@ -10,20 +10,20 @@ function Home() {
     const principles = [
         {
             number: "01",
-            title: "Clear Separation of Roles",
-            description: "We do not sit on both sides of a transaction.",
+            title: "No affiliated interests.",
+            description: "We hold no mandate that competes with any structure we govern.",
         },
         {
             number: "02",
-            title: "Unambiguous Fiduciary Duty",
+            title: "Fiduciary duty, enforced.",
             description:
-                "Where interests diverge, we act in the interests of beneficiaries.",
+                "Where interests diverge, we act for the beneficiaries.",
         },
         {
             number: "03",
-            title: "Evidence-Based Governance",
+            title: "Inspection-ready governance. ",
             description:
-                "All decisions are documented, minuted, and available for inspection.",
+                "Every decision documented, minuted, and available for review as standard.",
         },
     ];
     return (
@@ -48,12 +48,14 @@ function Home() {
                             Independent by design.
                         </h1>
                         <p className="text-lg text-custom-navy leading-relaxed mb-10 max-w-xl font-semibold">
-                            A corporate trustee institution with no affiliated interests.
+                            Kenya&apos;s dedicated corporate trustee institution.
                         </p>
                         <p className="text-base leading-relaxed mb-8 max-w-2xl text-custom-navy font-light">
-                            Pacturn Africa acts as fiduciary to pension schemes, investment structures, and corporate
-                            mandates. <span className="font-semibold text-custom-gold">We do not manage assets. We do not custody assets. We do not lend. We act only as trustee.</span>
-                            That distinction defines every decision we make.
+                            Pacturn Africa acts as fiduciary across pension schemes, collective investment structures, real estate investment trusts, and corporate mandates.
+                            Pacturn Africa carries no asset management mandate, holds no assets in custody, and has no lending interest in any structure where it acts as trustee.
+                            <span className="font-semibold text-custom-gold">
+                                These are not policy commitments. They are structural facts.
+                            </span>
                         </p>
 
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
@@ -61,33 +63,42 @@ function Home() {
                                 to="/contact"
                                 className="btn-primary font-light w-fit  md:mx-0 mx-auto"
                             >
-                                Contact Pacturn Africa
+                                Request a mandate proposal
                             </Link>
                             <Link
                                 to="/services"
                                 className="btn-outline font-light w-fit  md:mx-0 mx-auto"
                             >
-                                Explore our services
+                                View our mandates
                             </Link>
+                        </div>
+                        <div className="pt-8">
+                            <p className="text-xs md:text-xs  text-custom-navy leading-7 mx-w-xl font-light">
+                                Incorporated in Kenya under the Companies Act 2015
+                                <span className="mx-2">•</span>
+                                RBA Corporate Trustee Licence — Application filed May 2026
+                                <span className="mx-2">•</span>
+                                Suite 9, Upper Hill, Nairobi
+                            </p>
                         </div>
                     </div>
                 </div>
             </section>
-            <section className="w-full bg-gray-50 py-20">
+            <section className="w-full bg-white py-20">
                 <div className="max-w-7xl mx-auto px-6">
                     {/* Header */}
-                    <div className="max-w-3xl mb-12 mx-auto text-center">
-                        <h2 className="text-3xl md:text-4xl text-custom-navy mb-4">
+                    <div className="mb-12 mx-auto text-center">
+                        <h2 className="text-4xl md:text-5xl text-custom-navy mb-6">
                             Institutional Statement
                         </h2>
                         <p className="text-lg text-custom-navy font-light leading-relaxed">
-                            In Kenya and across the region, most corporate trustees are affiliated with commercial banks.
-                            The same institution that manages, custodies, or lends against assets often acts as trustee.
-                            This creates a structural conflict.
+                            Most corporate trustees in Kenya operate within financial groups that manage, custody, or lend against the same assets they oversee as trustee. The conflict is structural — not a question of intent, but of how the market was built.
+                            Pacturn Africa was incorporated outside that structure. Our only interest in any mandate we hold is the interest of the beneficiaries.
+                            Where that interest conflicts with a sponsor, fund manager, or administrator — we act for the beneficiaries. Every time, without qualification.
                             <br /><br />
-                            <span className="font-semibold text-custom-navy">
+                            {/* <span className="font-semibold text-custom-navy">
                                 Pacturn Africa was established to remove it.
-                            </span>
+                            </span> */}
                         </p>
                     </div>
 
@@ -95,9 +106,9 @@ function Home() {
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
                         {principles.map((item, index) => (
                             <div key={index}>
-                                <span className="text-lg text-custom-gold font-semibold mb-2 block">
+                                {/* <span className="text-lg text-custom-gold font-semibold mb-2 block">
                                     {item.number}
-                                </span>
+                                </span> */}
                                 <h3 className="text-xl font-semibold text-custom-navy mb-2">
                                     {item.title}
                                 </h3>
@@ -219,7 +230,7 @@ function Home() {
                         </p>
                         <div className="w-16 h-0.5 bg-custom-gold mt-6" />
                         <p className="font-bold mt-8 max-w-xl">
-                           Contact Pacturn Africa
+                            Contact Pacturn Africa
                         </p>
                         {/* Contact details */}
                         <div className="mt-10 space-y-5">
