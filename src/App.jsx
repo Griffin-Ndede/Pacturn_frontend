@@ -1,7 +1,7 @@
 import { createBrowserRouter , RouterProvider} from "react-router"
 import Home from "./Pages/Home"
 import AboutUs from "./Pages/AboutUs"
-import Services from "./Pages/Services"
+import Mandates from "./Pages/Mandates"
 import Contact from "./Pages/Contact"
 import ResearchDesk from "./Pages/ResearchDesk"
 import ResearchDetail from "./Pages/ResearchDetail"
@@ -17,8 +17,8 @@ function App() {
       element: <AboutUs />
      },
      {
-      path: "/services",
-      element: <Services/>
+      path: "/mandates",
+      element: <Mandates/>
      },
      {
       path: "/contact",

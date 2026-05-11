@@ -11,8 +11,8 @@ function AboutUs() {
       <section className="relative overflow-hidden bg-white pt-36 md:pt-44 pb-28 border-b border-gray-200">
 
         {/* Background Pattern */}
-        <div className="absolute inset-0 opacity-[0.03]">
-          <div className="absolute top-0 left-0 w-full h-full bg-[linear-gradient(to_right,#0f172a_1px,transparent_1px),linear-gradient(to_bottom,#0f172a_1px,transparent_1px)] bg-[size:80px_80px]" />
+        <div className=" inset-0 opacity-[0.03] fixed">
+          <div className="absolute top-0 left-0 w-full h-full bg-[linear-gradient(to_right,#0f172a_1px,transparent_1px),linear-gradient(to_bottom,#0f172a_1px,transparent_1px)] bg-size-[80px_80px]" />
         </div>
 
         <div className="relative max-w-7xl mx-auto px-6">

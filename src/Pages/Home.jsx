@@ -2,10 +2,10 @@ import Footer from "../Components/Footer";
 import Navbar from "../Components/Navbar";
 import { Link } from "react-router";
 import { ArrowRight, Mail, Phone } from "lucide-react";
-import { services } from "../data/services";
+import { mandates } from "../data/mandates";
 
 function Home() {
-    const servicesdisplayed = services.slice(0, 6);
+    const mandatesdisplayed = mandates.slice(0, 6);
 
     const principles = [
         {
@@ -138,25 +138,25 @@ function Home() {
                     {/* Services Grid */}
                     <div className="flex flex-col  divide-y w-fit mx-auto divide-custom-gold  overflow-hidden">
 
-                        {servicesdisplayed.map((service, index) => (
+                        {mandatesdisplayed.map((mandate, index) => (
                             <div
                                 key={index}
                                 className="flex flex-col md:flex-row md:items-center md:justify-between gap-6 p-8 hover:bg-gray-50 transition-all duration-300"
                             >
                                 <div>
                                     <h3 className="text-lg font-semibold text-custom-navy">
-                                        {service.title}
+                                        {mandate.title}
                                     </h3>
 
                                     {/* {
                                         <p className="text-sm text-gray-600 leading-relaxed mt-2 max-w-3xl">
-                                            {service.description}
+                                            {mandate.description}
                                         </p>
                                     } */}
                                 </div>
 
                                 <Link
-                                    to="/services"
+                                    to="/mandates"
                                     className="btn-primary w-fit"
                                 >
                                     Learn more
@@ -169,7 +169,7 @@ function Home() {
                     {/* Bottom CTA */}
                     <div className="mt-14 flex justify-center">
                         <Link
-                            to="/services"
+                            to="/mandates"
                             className="btn-primary"
                         >
                             View all mandates

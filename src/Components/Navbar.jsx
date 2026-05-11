@@ -29,7 +29,7 @@ function Navbar() {
                             <Link to="/about" className="hover:text-custom-gold">About us</Link>
                         </li>
                         <li>
-                            <Link to="/services" className="hover:text-custom-gold">Services</Link>
+                            <Link to="/mandates" className="hover:text-custom-gold">Mandates</Link>
                         </li>
                         <li>
                             <Link to="/research-desk" className="hover:text-custom-gold">Research Desk</Link>
@@ -66,7 +66,7 @@ function Navbar() {
                             <Link to="/about" onClick={() => setIsMenuOpen(false)} className="hover:text-custom-gold ">About us</Link>
                         </li>
                         <li>
-                            <Link to="/services" onClick={() => setIsMenuOpen(false)} className="hover:text-custom-gold ">Services</Link>
+                            <Link to="/mandates" onClick={() => setIsMenuOpen(false)} className="hover:text-custom-gold ">Mandates</Link>
                         </li>
                         <li>
                             <Link to="/research-desk" onClick={() => setIsMenuOpen(false)} className="hover:text-custom-gold ">Research Desk</Link>
