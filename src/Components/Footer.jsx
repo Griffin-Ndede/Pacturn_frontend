@@ -1,121 +1,142 @@
+import { Link } from "react-router";
 function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-custom-navy py-14">
+    <footer className="bg-custom-navy text-white py-16">
       <div className="max-w-7xl mx-auto px-6">
 
-        <div className="grid md:grid-cols-5 gap-10 mb-12">
+        {/* TOP GRID */}
+        <div className="grid md:grid-cols-4 gap-12 mb-14">
 
-          {/* Brand + Positioning */}
-          <div className="md:col-span-2">
-            <div className="flex items-center gap-2 mb-4">
-              <img
-                src="/images/Pacturn horizontal logo_1.png"
-                alt="Pacturn Africa Logo"
-                className="h-14 w-auto object-contain"
-              />
-            </div>
+          {/* BRAND */}
+          <div className="md:col-span-1">
+            <img
+              src="/images/Pacturn horizontal logo_1.png"
+              alt="Pacturn Africa"
+              className="h-12 w-auto object-contain mb-4"
+            />
 
-            <p className="text-white font-light leading-relaxed max-w-md mb-6">
-              Pacturn Africa is an independent corporate trustee institution providing
-              fiduciary oversight across pension schemes, collective investment structures,
-              and corporate vehicles across East and Southern Africa.
+            <p className="text-sm font-light leading-relaxed">
+              Independent Corporate Trustee · Fiduciary Services · Nairobi, Kenya
             </p>
 
-            <p className="text-white text-sm">
-              Independent. Unconflicted. Institutionally grounded.
+            <p className="text-xs text-white/60 mt-4">
+              Independent by design.
             </p>
           </div>
 
-          {/* Services */}
+          {/* NAVIGATION */}
           <div>
-            <h4 className="font-semibold mb-4 text-lg tracking-wider text-custom-gold">
-              Services
-            </h4>
-            <ul className="space-y-2.5">
-              {[
-                'Pension Trustee',
-                'Collective Investment Schemes',
-                'REIT Trustee',
-                'Escrow Services',
-                'ESOP Trustee',
-                'Estate Planning',
-                'Governance Advisory'
-              ].map((item) => (
-                <li key={item}>
-                  <a
-                    href="/services"
-                    className="text-white hover:text-custom-gold text-sm font-light transition-colors"
-                  >
-                    {item}
-                  </a>
-                </li>
-              ))}
+
+
+            <ul className="space-y-2 text-sm font-light">
+              <li>
+                <Link to="/" className="hover:text-custom-gold transition-colors">
+                  Home
+                </Link>
+              </li>
+
+              <li>
+                <Link to="/about" className="hover:text-custom-gold transition-colors">
+                  About
+                </Link>
+              </li>
+
+              <li>
+                <Link to="/mandates" className="hover:text-custom-gold transition-colors">
+                  Mandates
+                </Link>
+              </li>
+
+              <li>
+                <Link to="/team" className="hover:text-custom-gold transition-colors">
+                  Team
+                </Link>
+              </li>
+
+              <li>
+                <Link to="/research-desk" className="hover:text-custom-gold transition-colors">
+                  Research Desk
+                </Link>
+              </li>
+
+              <li>
+                <Link to="/contact" className="hover:text-custom-gold transition-colors">
+                  Contact
+                </Link>
+              </li>
             </ul>
           </div>
 
-          {/* Quick Access */}
+          {/* CONTACT */}
           <div>
-            <h4 className="font-semibold mb-4 text-lg tracking-wider text-custom-gold">
-              Quick Access
+            <h4 className="text-custom-gold text-sm uppercase tracking-[0.18em] mb-4">
+              Contact
             </h4>
-            <ul className="space-y-2.5">
-              {[
-                'About Pacturn',
-                'Research Desk',
-                'Contact'
-              ].map((item) => (
-                <li key={item}>
-                  <a
-                    href="/"
-                    className="text-white hover:text-custom-gold text-sm font-light transition-colors"
-                  >
-                    {item}
-                  </a>
-                </li>
-              ))}
+
+            <ul className="space-y-2 text-sm font-light">
+              <li>info@pacturn.africa</li>
+              <li>pacturnafrica.com</li>
+              <li>pactumtrust.com</li>
+              <li className="pt-2">
+                Suite 9, Lower-Hill Apartments<br />
+                Upper Hill, Nairobi, Kenya
+              </li>
             </ul>
           </div>
 
-          {/* Compliance */}
+          {/* LEGAL */}
           <div>
-            <h4 className="font-semibold mb-4 text-lg tracking-wider text-custom-gold">
-              Compliance
+            <h4 className="text-custom-gold text-sm uppercase tracking-[0.18em] mb-4">
+              Regulatory & Legal
             </h4>
-            <ul className="space-y-2.5">
-              {[
-                'Privacy Policy',
-                'Disclaimer',
-                'Regulatory Status'
-              ].map((item) => (
-                <li key={item}>
-                  <a
-                    href="/"
-                    className="text-white hover:text-custom-gold text-sm font-light transition-colors"
-                  >
-                    {item}
-                  </a>
-                </li>
-              ))}
-            </ul>
+
+            <p className="text-xs font-light leading-relaxed text-white/80">
+              Pactum Limited is incorporated in Kenya under the Companies Act 2015, Registration No. [●].
+            </p>
+
+            <p className="text-xs font-light leading-relaxed text-white/80 mt-3">
+              RBA Corporate Trustee Licence — Application filed May 2026.
+              <br />
+              CMA registration — in process.
+            </p>
+
+            <p className="text-xs font-light leading-relaxed text-white/80 mt-3">
+              Pacturn Africa is the trading name of Pactum Limited.
+            </p>
+
+            <p className="text-xs font-light leading-relaxed text-white/80 mt-3">
+              Pacturn Africa carries no asset management mandate, holds no assets in custody,
+              and has no lending interest in any structure where it acts as trustee.
+              These are structural facts.
+            </p>
           </div>
 
         </div>
 
-        {/* Bottom Bar */}
-        <div className="border-t border-white/20 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+        {/* DISCLAIMER */}
+        <div className="border-t border-white/10 pt-8 mb-10">
+          <p className="text-xs text-white/60 font-light leading-relaxed max-w-4xl">
+            The information on this website is provided for institutional and professional reference only.
+            It does not constitute legal, financial, or investment advice. Pactum Limited is not responsible
+            for the content of third-party websites.
+          </p>
+        </div>
 
-          <p className="text-white text-sm font-light">
-            &copy; {currentYear} Pacturn Africa. All rights reserved.
+        {/* BOTTOM BAR */}
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+
+          <p className="text-sm text-white/70 font-light">
+            © {currentYear} Pactum Limited. All rights reserved.
           </p>
 
-          <p className="text-white/60 text-xs max-w-md text-center sm:text-right font-light">
-            Pacturn Africa operates as an independent trustee and fiduciary services provider.
-            Information on this site does not constitute financial advice.
+          <p className="text-xs text-white/50 font-light max-w-md text-left md:text-right">
+            Pacturn Africa operates as an independent corporate trustee institution providing fiduciary oversight across regulated structures in Kenya and East Africa.
           </p>
 
         </div>
+
       </div>
     </footer>
   );
