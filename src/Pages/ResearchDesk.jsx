@@ -2,6 +2,7 @@ import { useState } from "react";
 import { papers } from "../data/researchDeskData";
 import Navbar from "../Components/Navbar";
 import { Link } from "react-router";
+import Footer from "../Components/Footer";
 
 function ResearchDesk() {
   const [search, setSearch] = useState("");
@@ -42,8 +43,8 @@ function ResearchDesk() {
       </section>
 
       {/* GOVERNANCE SECTION (NEW) */}
-      <section className="py-28 bg-gray-50">
-        <div className="max-w-5xl mx-auto px-6 space-y-16">
+      <section className=" bg-gray-50 py-10">
+        <div className="max-w-6xl mx-auto px-6 space-y-16">
 
           {/* Core Statement */}
           <div>
@@ -51,75 +52,18 @@ function ResearchDesk() {
               Core Statement
             </h2>
             <div className="w-12 h-0.5 bg-custom-gold mb-6" />
-            <p className="text-base md:text-lg font-light text-gray-700 leading-relaxed">
-              The Research Desk is part of how Pacturn Africa operates as an institution.
-              It is not a marketing function.
+            <p className="text-base font-light text-custom-navy leading-relaxed">
+              The Research Desk is not a content function.
+              It is the formal research output of Pacturn Africa&apos;s institutional practice — original analysis on fiduciary governance, regulatory developments, and governance standards across African markets.
+              We publish because the institutions that appoint trustees read governance research. Pension boards. Law firms. Scheme administrators. Regulators. Our research is written for that audience, at that level.
             </p>
           </div>
-
-          {/* Purpose + Audience Grid */}
-          <div className="grid md:grid-cols-2 gap-16">
-
-            <div>
-              <h3 className="text-xl text-custom-navy mb-4">Purpose</h3>
-              <p className="text-base font-light text-gray-700 mb-4">
-                We publish research to:
-              </p>
-              <ul className="space-y-3 text-base font-light text-gray-700">
-                <li>• Examine fiduciary practice in African markets</li>
-                <li>• Analyse regulatory developments</li>
-                <li>• Define governance standards</li>
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="text-xl text-custom-navy mb-4">Audience</h3>
-              <p className="text-base font-light text-gray-700 mb-4">
-                Our research is read by:
-              </p>
-              <ul className="space-y-3 text-base font-light text-gray-700">
-                <li>• Pension trustees and boards</li>
-                <li>• Law firms and advisors</li>
-                <li>• Fund managers and administrators</li>
-                <li>• Regulators</li>
-              </ul>
-
-              <p className="mt-6 text-base font-light text-gray-700">
-                These are the same institutions that appoint trustees.
-              </p>
-            </div>
-
-          </div>
-
-          {/* Publication Discipline */}
-          <div>
-            <h3 className="text-xl text-custom-navy mb-4">
-              Publication Discipline
-            </h3>
-            <p className="text-base font-light text-gray-700 mb-4">
-              We publish on a defined cadence. Each paper is:
-            </p>
-
-            <div className="grid md:grid-cols-3 gap-6">
-              {["Structured", "Referenced", "Defensible"].map((item, i) => (
-                <div key={i} className={` p-2 text-center ${i % 2 != 0 ? "btn-primary" : "btn-secondary" }`}>
-                  <span className="text-sm text-white font-semibold">
-                    {String(i + 1).padStart(2, "0")}
-                  </span>
-                  <p className="mt-3 text-base font-light text-white">
-                    {item}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
-
           {/* Access CTA */}
-          <div className="border-l-2 border-custom-gold pl-6">
+          {/* <div className="border-l-2 border-custom-gold pl-6">
             <h3 className="text-xl text-custom-navy mb-2">
               Access
             </h3>
-            <p className="text-base font-light text-gray-700 mb-6">
+            <p className="text-base font-light text-custom-navy mb-6">
               All publications are available for download.
             </p>
 
@@ -129,13 +73,13 @@ function ResearchDesk() {
             >
               View Publications →
             </Link>
-          </div>
+          </div> */}
 
         </div>
       </section>
 
       {/* PAPERS */}
-      <section className="py-20">
+      <section className="">
 
         <div className="max-w-6xl mx-auto px-6">
 
@@ -221,7 +165,57 @@ function ResearchDesk() {
           </div>
 
         </div>
+
       </section>
+      <section className="max-w-6xl mx-auto py-20">
+        <div>
+          <h2 className="text-2xl md:text-3xl text-custom-navy mb-4">
+            Publication Standard
+          </h2>
+
+          <div className="w-12 h-0.5 bg-custom-gold mb-6" />
+
+          <p className="text-base font-light text-custom-navy leading-relaxed">
+            Each paper is structured across seven defined sections, referenced to primary Kenyan law and regulation, and written for a professional audience. It carries a practitioner note, an implementation checklist, and a legal review flag on all primary source citations.
+          </p>
+
+          <p className="text-base font-light text-custom-navy leading-relaxed mt-6">
+            We publish on a defined cadence. Each paper is complete before it is released.
+          </p>
+        </div>
+
+        {/* Research Alerts */}
+        <div className="border border-gray-200 rounded-2xl p-8 bg-gray-50 mt-10">
+
+          <h2 className="text-xl text-custom-navy mb-2">
+            Research Alerts
+          </h2>
+
+          <p className="text-sm text-gray-600 mb-6 font-light">
+            To receive new publications by email as they are released:
+          </p>
+
+          <div className="flex flex-col sm:flex-row gap-4">
+
+            <input
+              type="email"
+              placeholder="Email address"
+              className="flex-1 border-b border-gray-300 bg-transparent py-3 outline-none font-light"
+            />
+
+            <button className="btn-primary">
+              Subscribe to Research Alerts
+            </button>
+
+          </div>
+
+          <p className="text-xs text-gray-500 mt-4">
+            We do not send marketing communications. Research alerts only.
+          </p>
+
+        </div>
+      </section>
+      <Footer/>
     </>
   );
 }

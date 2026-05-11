@@ -4,6 +4,27 @@ import { mandates } from "../data/mandates";
 import { Link } from "react-router";
 
 function Mandates() {
+
+    const appointmentProcess = [
+        {
+            step: "01",
+            title: "Initial conversation",
+            description:
+                "We discuss the mandate, structure, and requirements. If we are not the right fit, we will say so.",
+        },
+        {
+            step: "02",
+            title: "Written proposal",
+            description:
+                "We set out our proposed governance approach, scope, and fee structure in writing.",
+        },
+        {
+            step: "03",
+            title: "Appointment and onboarding",
+            description:
+                "We execute the appointment documentation and begin the governance onboarding.",
+        },
+    ];
     return (
         <>
             <Navbar />
@@ -118,55 +139,22 @@ function Mandates() {
 
                     {/* Steps */}
                     <div className="grid md:grid-cols-3 gap-10">
-
-                        {/* Step 1 */}
-                        <div className="border border-gray-200 rounded-3xl p-8 bg-gray-50">
-                            <p className="text-sm text-gray-500 uppercase tracking-[0.16em]">
-                                01
-                            </p>
-
-                            <h3 className="text-lg font-medium text-custom-navy mt-4">
-                                Initial conversation
-                            </h3>
-
-                            <p className="text-gray-700 font-light leading-relaxed mt-4">
-                                We discuss the mandate, structure, and requirements. If we are not
-                                the right fit, we will say so.
-                            </p>
-                        </div>
-
-                        {/* Step 2 */}
-                        <div className="border border-gray-200 rounded-3xl p-8 bg-gray-50">
-                            <p className="text-sm text-gray-500 uppercase tracking-[0.16em]">
-                                02
-                            </p>
-
-                            <h3 className="text-lg font-medium text-custom-navy mt-4">
-                                Written proposal
-                            </h3>
-
-                            <p className="text-gray-700 font-light leading-relaxed mt-4">
-                                We set out our proposed governance approach, scope, and fee
-                                structure in writing.
-                            </p>
-                        </div>
-
-                        {/* Step 3 */}
-                        <div className="border border-gray-200 rounded-3xl p-8 bg-gray-50">
-                            <p className="text-sm text-gray-500 uppercase tracking-[0.16em]">
-                                03
-                            </p>
-
-                            <h3 className="text-lg font-medium text-custom-navy mt-4">
-                                Appointment and onboarding
-                            </h3>
-
-                            <p className="text-gray-700 font-light leading-relaxed mt-4">
-                                We execute the appointment documentation and begin the governance
-                                onboarding.
-                            </p>
-                        </div>
-
+                        {appointmentProcess.map((item, index) => (
+                            <div
+                                key={index}
+                                className="border border-gray-200 rounded-3xl p-8 bg-gray-50"
+                            >
+                                <p className="text-base text-custom-gold ">
+                                    {item.step}
+                                </p>
+                                <h3 className="text-lg font-medium text-custom-navy mt-4">
+                                    {item.title}
+                                </h3>
+                                <p className="text-custom-navy font-light leading-relaxed mt-4">
+                                    {item.description}
+                                </p>
+                            </div>
+                        ))}
                     </div>
 
                     {/* CTA */}
