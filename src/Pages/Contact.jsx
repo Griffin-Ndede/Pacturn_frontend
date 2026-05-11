@@ -119,7 +119,7 @@ function Contact() {
           </div>
 
           <p className="text-sm text-gray-500 font-light">
-            pacturnafrica.com · pactumtrust.com
+            pacturnafrica.com · Pacturntrust.com
           </p>
 
         </div>

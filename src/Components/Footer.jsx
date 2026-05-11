@@ -78,7 +78,7 @@ function Footer() {
             <ul className="space-y-2 text-sm font-light">
               <li>info@pacturn.africa</li>
               <li>pacturnafrica.com</li>
-              <li>pactumtrust.com</li>
+              <li>pacturntrust.com</li>
               <li className="pt-2">
                 Suite 9, Lower-Hill Apartments<br />
                 Upper Hill, Nairobi, Kenya
@@ -93,7 +93,7 @@ function Footer() {
             </h4>
 
             <p className="text-xs font-light leading-relaxed text-white/80">
-              Pactum Limited is incorporated in Kenya under the Companies Act 2015, Registration No. [●].
+              Pacturn Africa is incorporated in Kenya under the Companies Act 2015, Registration No. [●].
             </p>
 
             <p className="text-xs font-light leading-relaxed text-white/80 mt-3">
@@ -103,7 +103,7 @@ function Footer() {
             </p>
 
             <p className="text-xs font-light leading-relaxed text-white/80 mt-3">
-              Pacturn Africa is the trading name of Pactum Limited.
+              Pacturn Africa is the trading name of Pacturn Africa.
             </p>
 
             <p className="text-xs font-light leading-relaxed text-white/80 mt-3">
@@ -119,7 +119,7 @@ function Footer() {
         <div className="border-t border-white/10 pt-8 mb-10">
           <p className="text-xs text-white/60 font-light leading-relaxed max-w-4xl">
             The information on this website is provided for institutional and professional reference only.
-            It does not constitute legal, financial, or investment advice. Pactum Limited is not responsible
+            It does not constitute legal, financial, or investment advice. Pacturn Africa is not responsible
             for the content of third-party websites.
           </p>
         </div>
@@ -128,7 +128,7 @@ function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
 
           <p className="text-sm text-white/70 font-light">
-            © {currentYear} Pactum Limited. All rights reserved.
+            © {currentYear} Pacturn Africa. All rights reserved.
           </p>
 
           <p className="text-xs text-white/50 font-light max-w-md text-left md:text-right">
