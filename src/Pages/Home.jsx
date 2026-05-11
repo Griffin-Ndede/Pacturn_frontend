@@ -29,7 +29,7 @@ function Home() {
     return (
         <>
             <Navbar />
-            <section className="w-full md:h-[75vh] h-fit flex items-center justify-center bg-white md:bg-transparent">
+            <section className="w-full h-screen flex items-center justify-center bg-white md:bg-transparent">
                 <div className="relative w-full h-full flex items-center overflow-hidden">
                     {/* Background Image (ONLY md and above) */}
                     <div
@@ -83,6 +83,7 @@ function Home() {
                         </div>
                     </div>
                 </div>
+
             </section>
             <section className="w-full bg-white py-20">
                 <div className="max-w-7xl mx-auto px-6">
@@ -123,11 +124,11 @@ function Home() {
             <section className="py-20 bg-white">
                 <div className="max-w-7xl mx-auto px-6">
                     {/* Section Heading */}
-                    <div className="mb-14 max-w-2xl">
+                    <div className="mb-14 max-w-2xl mx-auto text-center">
                         <h2 className="text-3xl md:text-4xl font-semibold text-custom-navy mb-4">
-                            Service lines
+                            Mandates
                         </h2>
-                        <div className="w-16 h-0.5 bg-custom-gold mb-6"></div>
+                        <div className="w-16 h-0.5 bg-custom-gold mb-6 mx-auto"></div>
 
                         <p className="text-gray-600 leading-relaxed">
                             We accept appointment across the following mandates
@@ -135,23 +136,28 @@ function Home() {
                     </div>
 
                     {/* Services Grid */}
-                    <div className="grid md:grid-cols-3 gap-6">
+                    <div className="flex flex-col  divide-y w-fit mx-auto divide-custom-gold  overflow-hidden">
 
                         {servicesdisplayed.map((service, index) => (
                             <div
                                 key={index}
-                                className="border border-gray-200 p-8 rounded-3xl hover:border-custom-gold transition-all duration-300"
+                                className="flex flex-col md:flex-row md:items-center md:justify-between gap-6 p-8 hover:bg-gray-50 transition-all duration-300"
                             >
-                                <h3 className="text-lg font-semibold text-custom-navy mb-4">
-                                    {service.title}
-                                </h3>
+                                <div>
+                                    <h3 className="text-lg font-semibold text-custom-navy">
+                                        {service.title}
+                                    </h3>
 
-                                <p className="text-sm text-gray-600 leading-relaxed mb-6">
-                                    {service.description}
-                                </p>
+                                    {/* {
+                                        <p className="text-sm text-gray-600 leading-relaxed mt-2 max-w-3xl">
+                                            {service.description}
+                                        </p>
+                                    } */}
+                                </div>
+
                                 <Link
                                     to="/services"
-                                    className="btn-primary"
+                                    className="btn-primary w-fit"
                                 >
                                     Learn more
                                 </Link>
@@ -166,103 +172,179 @@ function Home() {
                             to="/services"
                             className="btn-primary"
                         >
-                            View All Services
+                            View all mandates
                         </Link>
                     </div>
 
                 </div>
             </section>
-            <section className="py-28 bg-white">
-                <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-12 gap-14 items-center">
-
+            <section className="py-28 bg-slate-50">
+                <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-12 gap-14 items-start">
                     {/* Text Content */}
-                    <div className="md:col-span-6 order-2 md:order-1">
+                    <div className="md:col-span-5">
 
-                        <h1 className="text-3xl md:text-4xl text-custom-navy">
+                        <p className="text-sm tracking-[0.18em] uppercase text-gray-500">
                             Research Desk
-                        </h1>
-
-                        <p className="font-light mt-4">
-                            The instutions that appoint trustees read governance.
                         </p>
 
-                        <div className="w-16 h-0.5 bg-custom-gold mt-6" />
+                        <h2 className="text-3xl md:text-4xl text-custom-navy mt-4 leading-tight">
+                            Institutional research on fiduciary governance across African markets.
+                        </h2>
 
-                        <p className="font-light text-lg mt-8">
-                            Our research desk publishes original analysis on fiduciary practice across African markets.
+                        <p className="font-light text-lg text-gray-700 mt-8 leading-relaxed">
+                            The Research Desk publishes original analysis on fiduciary governance across African markets.
+                            It is not a content function. It is institutional output — read by the same pension boards,
+                            law firms, and regulators that appoint trustees.
                         </p>
+
+                        <div className="w-16 h-0.5 bg-custom-gold mt-10" />
 
                         <Link
                             to="/research-desk"
-                            className="btn-primary bg-custom-teal hover:bg-custom-gold flex w-fit items-center mt-10 gap-3 font-light"
+                            className="btn-secondary flex w-fit items-center gap-3 mt-10"
                         >
-                            Access Research Desk
+                            View Research Desk
                             <ArrowRight size={16} />
                         </Link>
 
                     </div>
 
-                    {/* Visual */}
-                    <div className="md:col-span-6 order-1 md:order-2">
+                    {/* Visual + Publication */}
+                    <div className="md:col-span-7">
+
                         <div className="relative">
                             <img
                                 src="https://globallawexperts.com/wp-content/uploads/2022/10/colleagues-are-stress-talking-about-the-finance-re-2022-12-16-03-39-19-utc-scaled.jpg"
-                                alt="Open journal symbolising the Pacturn Research Desk"
-                                className="w-full h-full object-cover rounded-3xl shadow-3xl"
+                                alt="Research and fiduciary governance discussion"
+                                className="w-full h-84 object-cover rounded-3xl shadow-3xl"
                                 loading="lazy"
                             />
-                            <div className="hidden md:block absolute -bottom-6 -left-6 btn-secondary px-6 py-4 text-sm font-light">
+
+                            <div className="hidden md:block absolute -bottom-6 left-6 bg-white border border-gray-200 px-6 py-4 text-sm font-light rounded-2xl shadow-lg">
                                 Vol. I — Inaugural Series
                             </div>
                         </div>
-                    </div>
-                </div>
-            </section>
-            <section className="py-28 bg-white border-t border-gray-200">
-                <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-12 gap-14 items-start">
-                    {/* Left Content */}
-                    <div className="md:col-span-7">
-                        <h2 className="text-3xl md:text-4xl text-custom-navy">
-                            Contact us
-                        </h2>
-                        <p className="font-light mt-4">
-                            For trustee appointments, referrals, or institutional engagement.
-                        </p>
-                        <div className="w-16 h-0.5 bg-custom-gold mt-6" />
-                        <p className="font-bold mt-8 max-w-xl">
-                            Contact Pacturn Africa
-                        </p>
-                        {/* Contact details */}
-                        <div className="mt-10 space-y-5">
-                            <div className="flex items-center gap-3 text-custom-navy font-light">
-                                <Mail size={24} strokeWidth={1.5} absoluteStrokeWidth className="text-custom-gold" />
-                                <span className="">info@pacturn.africa</span>
-                            </div>
-                            <div className="flex items-center gap-3 text-custom-navy font-light">
-                                <Phone size={24} strokeWidth={1.5} absoluteStrokeWidth className="text-custom-gold" />
-                                <span className="">+254 XXX XXX XXX</span>
-                            </div>
+
+                        {/* Publication Preview */}
+                        <div className="mt-14 border-t border-gray-200 pt-10">
+
+                            <p className="text-sm uppercase tracking-[0.16em] text-gray-500">
+                                First Publication — May 2026
+                            </p>
+
+                            <h3 className="text-2xl text-custom-navy mt-4 leading-snug">
+                                [Paper 1 Title]
+                            </h3>
+
+                            <p className="font-light text-gray-700 mt-4 leading-relaxed max-w-2xl">
+                                One-sentence abstract.
+                            </p>
+
+                            <button className="btn-primary mt-8">
+                                Notify Me on Publication
+                            </button>
+
                         </div>
+
                     </div>
 
-                    {/* Right CTA Panel */}
-                    <div className="md:col-span-5">
-                        <div className="border border-gray-200 p-10 bg-gray-50 rounded-3xl">
-                            <p className="text-2xl text-custom-gold mb-6">
-                                Submit an Enquiry
-                            </p>
-                            <p className="font-light mb-8">
-                                Provide a brief overview of your institution or requirement.
-                                Our team will respond within a structured review process.
-                            </p>
-                            <Link
-                                to="/contact"
-                                className="btn-primary w-fit mx-auto  text-center justify-center"
-                            >
-                                Contact Us
-                            </Link>
+                </div>
+            </section>
+            <section className="py-12 bg-white border-t border-gray-200">
+                <div className="max-w-7xl mx-auto px-6">
+
+                    <div className="grid lg:grid-cols-12 gap-12 items-center">
+
+                        {/* Left Content */}
+                        <div className="lg:col-span-5">
+
+                            <div className=" rounded-2xl p-10 h-full flex flex-col justify-between">
+
+                                <div>
+
+                                    <h1 className="text-2xl  text-custom-navy">
+                                        Contact Us
+                                    </h1>
+
+                                    <p className="font-light text-base  leading-relaxed mt-8">
+                                        For trustee appointments, institutional referrals, governance mandates,
+                                        or fiduciary consultations, contact Pacturn Africa directly.
+                                    </p>
+
+                                    <div className="w-32 h-px bg-custom-gold mt-4" />
+
+                                    {/* Contact Info */}
+                                    <div className="mt-10 space-y-6">
+
+                                        <div className="flex items-center gap-5">
+
+                                            <Mail
+                                                size={22}
+                                                strokeWidth={1.5}
+                                                className="text-custom-gold"
+                                            />
+
+                                            <div>
+                                                <p className="text-sm text-gray-500">
+                                                    Email
+                                                </p>
+
+                                                <p className="text-custom-navy text-lg font-light mt-1">
+                                                    info@pacturn.africa
+                                                </p>
+                                            </div>
+
+                                        </div>
+
+                                        <div className="flex items-center gap-5">
+
+                                            <Phone
+                                                size={22}
+                                                strokeWidth={1.5}
+                                                className="text-custom-gold"
+                                            />
+
+                                            <div>
+                                                <p className="text-sm text-gray-500">
+                                                    Telephone
+                                                </p>
+
+                                                <p className="text-custom-navy text-lg font-light mt-1">
+                                                    +254 XXX XXX XXX
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <Link
+                                    to="/contact"
+                                    className="btn-primary mt-10 w-fit"
+                                >
+                                    Contact Us
+                                </Link>
+
+                            </div>
+
                         </div>
+
+                        {/* Right Image */}
+                        <div className="lg:col-span-7">
+
+                            <div className="relative overflow-hidden rounded-4xl h-84">
+
+                                <img
+                                    src="https://arrowsecurity.com/wp-content/uploads/2024/09/Arrow-New-Website_Contact-Us_Header-Photo_AdobeStock_822313633_Extended-scaled.jpg"
+                                    alt="Institutional meeting and governance engagement"
+                                    className="w-full h-full object-cover"
+                                />
+                            </div>
+
+                        </div>
+
                     </div>
+
                 </div>
             </section>
             <Footer />
