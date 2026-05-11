@@ -12,7 +12,7 @@ function Footer() {
           {/* BRAND */}
           <div className="md:col-span-1">
             <img
-              src="/images/Pacturn horizontal logo_1.png"
+              src="/images/Pacturn white logo.png"
               alt="Pacturn Africa"
               className="h-12 w-auto object-contain mb-4"
             />
