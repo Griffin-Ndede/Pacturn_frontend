@@ -229,17 +229,14 @@ function Home() {
                         <div className="mt-14 border-t border-gray-200 pt-10">
 
                             <p className="text-sm uppercase tracking-[0.16em] text-gray-500">
-                                First Publication — May 2026
+                                Latest publication — May 2026
                             </p>
-
                             <h3 className="text-2xl text-custom-navy mt-4 leading-snug">
-                                [Paper 1 Title]
+                                Fiduciary Independence in African Capital Markets
                             </h3>
-
                             <p className="font-light text-gray-700 mt-4 leading-relaxed max-w-2xl">
-                                One-sentence abstract.
+                                An institutional analysis of fiduciary independence, governance conflicts, and trustee accountability within emerging African pension and investment structures.
                             </p>
-
                             <button className="btn-primary mt-8">
                                 Notify Me on Publication
                             </button>
@@ -262,7 +259,7 @@ function Home() {
 
                                 <div>
 
-                                    <h1 className="text-2xl  text-custom-navy">
+                                    <h1 className="text-3xl  text-custom-navy">
                                         Contact Us
                                     </h1>
 

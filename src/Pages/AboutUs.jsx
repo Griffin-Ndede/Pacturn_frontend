@@ -1,161 +1,297 @@
 import Footer from "../Components/Footer";
 import Navbar from "../Components/Navbar";
+import { Link } from "react-router";
 
 function AboutUs() {
   return (
     <>
       <Navbar />
 
-      {/* FOUNDING PURPOSE */}
-      <section className="py-36 md:py-44">
-        <div className="max-w-4xl mx-auto px-6">
-          <h1 className="text-3xl md:text-4xl text-custom-navy leading-tight tracking-tight">
-            An institution defined by what it does not do.
-          </h1>
+      {/* HERO */}
+      <section className="relative overflow-hidden bg-white pt-36 md:pt-44 pb-28 border-b border-gray-200">
 
-          <div className="w-12 h-0.5 bg-custom-gold mt-6" />
-
-          <p className="mt-10 text-base md:text-lg max-w-2xl font-light leading-relaxed text-gray-700">
-            Pacturn Africa is an independent corporate trustee. We were not
-            created as an extension of a financial institution. We were created
-            to stand separate from one.
-          </p>
+        {/* Background Pattern */}
+        <div className="absolute inset-0 opacity-[0.03]">
+          <div className="absolute top-0 left-0 w-full h-full bg-[linear-gradient(to_right,#0f172a_1px,transparent_1px),linear-gradient(to_bottom,#0f172a_1px,transparent_1px)] bg-[size:80px_80px]" />
         </div>
-      </section>
 
-      {/* MARKET REALITY */}
-      <section className="relative bg-custom-navy text-white py-28 overflow-hidden">
-        {/* Background */}
-        <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVEjYm17Si6-wM-2rdKHoKVtu1r_bsxk56uA&s"
-          alt=""
-          className="absolute inset-0 w-full h-full object-cover opacity-10"
-        />
-        <div className="absolute inset-0 bg-custom-navy/80" />
+        <div className="relative max-w-7xl mx-auto px-6">
 
-        <div className="max-w-6xl mx-auto px-6 relative">
-          {/* Header */}
-          <div className="max-w-3xl">
-            <h2 className="text-2xl md:text-3xl text-custom-gold mb-4">
-              Market reality
-            </h2>
+          <div className="grid lg:grid-cols-12 gap-16 item-center">
 
-            <p className="text-base md:text-lg text-white/80 font-light">
-              In the current market structure:
-            </p>
+            {/* Left */}
+            <div className="lg:col-span-7">
 
-            <div className="w-16 h-0.5 bg-custom-gold mt-4" />
-          </div>
+              <p className="text-sm uppercase tracking-[0.2em] text-gray-500">
+                About Pacturn Africa
+              </p>
 
-          {/* Points */}
-          <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-10">
-            {[
-              "Trustees are commonly affiliated with banks",
-              "Those banks may act as custodian",
-              "The same institutions may also act as fund manager or lender",
-            ].map((item, index) => (
-              <div key={index}>
-                <span className="text-custom-gold text-sm font-semibold block mb-3">
-                  {String(index + 1).padStart(2, "0")}
-                </span>
+              <h1 className="text-3xl md:text-4xl text-custom-navy tracking-tight mt-6 max-w-4xl">
+                Built for one purpose.
+              </h1>
 
-                <p className="text-base text-white/90 font-light leading-relaxed">
-                  {item}
-                </p>
-              </div>
-            ))}
-          </div>
+              <div className="w-20 h-px bg-custom-gold mt-10" />
 
-          {/* Closing Statement */}
-          <div className="mt-20 max-w-3xl border-l-2 border-custom-gold pl-6">
-            <p className="text-base text-white/90 leading-relaxed font-light">
-              This concentration of roles creates inherent conflicts. It is a
-              structural feature of the market, not a failure of individual
-              institutions.
-            </p>
-          </div>
-        </div>
-      </section>
+              <div className="mt-12 space-y-8 max-w-4xl">
 
-      {/* POSITION + STRUCTURE */}
-      <section className="py-24 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-6 space-y-20">
-
-          {/* OUR POSITION */}
-          <div className="max-w-3xl">
-            <h2 className="text-2xl md:text-3xl text-custom-navy mb-4">
-              Our position
-            </h2>
-            <div className="w-12 h-0.5 bg-custom-gold mb-6" />
-            <p className="text-base md:text-lg text-gray-700 leading-relaxed font-light">
-              We operate outside that structure. We hold no competing mandate in
-              relation to the assets we oversee.
-            </p>
-          </div>
-
-          {/* WHAT THIS ALLOWS */}
-          <div>
-            <h2 className="text-2xl md:text-3xl text-custom-navy mb-6">
-              What this allows
-            </h2>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-              {[
-                "Independent oversight of fund managers.",
-                "Unrestricted challenge of administrators and sponsors.",
-                "Objective decision-making in contested situations.",
-              ].map((item, index) => (
-                <div key={index}>
-                  <span className="text-sm font-light text-white mb-2 block bg-custom-gold w-fit rounded-full p-3">
-                    {String(index + 1).padStart(2, "0")}
+                <p className="text-base md: text-custom-navy leading-relaxed font-light">
+                  Pacturn Africa is a corporate trustee institution.
+                  <span className="font-medium">
+                    {" "}That is the whole of what we are.
                   </span>
-                  <p className="text-base text-gray-700 leading-relaxed font-light">
-                    {item}
-                  </p>
-                </div>
-              ))}
+                </p>
+
+                <p className=" text-gray-700 leading-loose font-light">
+                  Not a trustee function within a bank. Not a fiduciary
+                  service line within a financial group. A standalone
+                  institution whose only mandate is governance.
+                </p>
+
+                <p className=" text-gray-700 leading-loose font-light">
+                  Pacturn Africa carries no asset management mandate, holds no
+                  assets in custody, and has no lending interest in any
+                  structure where it acts as trustee.
+                </p>
+
+                <p className=" text-custom-navy leading-relaxed font-medium border-l-2 border-custom-gold pl-6">
+                  These are not policy commitments. They are structural facts.
+                </p>
+
+              </div>
+
             </div>
-          </div>
 
-          {/* FIDUCIARY DUTY */}
-          <div className="max-w-3xl">
-            <h2 className="text-2xl md:text-3xl text-custom-navy mb-4">
-              Fiduciary Duty
-            </h2>
-            <div className="w-12 h-0.5 bg-custom-gold mb-6" />
-            <p className="text-base md:text-lg text-gray-700 leading-relaxed font-light">
-              As trustee, our duty is to act in the interests of beneficiaries.
-              Where those interests conflict with those of a sponsor, manager, or
-              counterparty, we are required to prioritise the beneficiaries. We
-              do so without qualification.
-            </p>
-          </div>
+            {/* Right */}
+            <div className="lg:col-span-5">
 
-          {/* INSTITUTIONAL CHARACTERISTICS */}
-          <div>
-            <h2 className="text-2xl md:text-3xl text-custom-navy mb-6">
-              Institutional Characteristics
-            </h2>
+              <div className="relative overflow-hidden rounded-4xl h-135">
 
-            <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
-              {[
-                "Independent",
-                "Authoritative",
-                "Precise",
-                "Considered",
-                "Pan-African in scope",
-              ].map((item, index) => (
-                <div
-                  key={index}
-                  className="btn-outline px-4 py-4 text-center text-base font-light"
-                >
-                  {item}
-                </div>
-              ))}
+                <img
+                  src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1600&auto=format&fit=crop"
+                  alt="Institutional governance"
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
+
+                <div className="absolute inset-0 bg-linear-to-t from-custom-navy/70 via-custom-navy/20 to-transparent" />
+
+              </div>
+
             </div>
+
           </div>
 
         </div>
+
+      </section>
+
+      {/* MARKET STRUCTURE */}
+      <section className="relative bg-custom-navy py-32 overflow-hidden">
+
+        <img
+          src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1600&auto=format&fit=crop"
+          alt=""
+          className="absolute inset-0 w-full h-full object-cover opacity-60"
+        />
+        <div className="absolute inset-0 bg-custom-navy/90" />
+        <div className="relative max-w-6xl mx-auto px-6">
+          <div className="max-w-5xl">
+            <p className="text-base text-white/80  tracking-wider font-light">
+              The Market Structure
+            </p>
+            <h2 className="text-3xl md:text-4xl text-white leading-tight mt-6">
+              The trustee market was built inside financial institutions.
+            </h2>
+            <div className="w-20 h-px bg-custom-gold mt-10" />
+            <div className="mt-12 space-y-4">
+              <p className=" text-white leading-loose font-light">
+                The corporate trustee market in Kenya was built around financial
+                institutions. Banks became trustees because they already held
+                the assets — in custody, in management, on their balance sheets
+                as loans.
+              </p>
+              <p className=" text-white leading-loose font-light">
+                That concentration created an inherent conflict. The trustee
+                whose duty is to challenge a fund manager or administrator is
+                commercially dependent on that same relationship.
+              </p>
+              <p className=" text-white leading-loose font-light">
+                It is not a question of competence. It is a question of
+                structure. Most trustees in this market operate within that
+                constraint because they were built within it.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* POSITIONING */}
+      <section className="py-32 bg-gray-50">
+
+        <div className="max-w-7xl mx-auto px-6">
+
+          <div className="grid lg:grid-cols-12 gap-20">
+
+            {/* LEFT SIDEBAR */}
+            <div className="lg:col-span-4">
+
+              <div className="sticky top-32">
+
+                <p className="text-sm uppercase tracking-[0.18em] text-gray-500">
+                  Institutional Position
+                </p>
+
+                <h2 className="text-4xl text-custom-navy leading-tight mt-6">
+                  Independence is a structural requirement.
+                </h2>
+
+                <div className="w-16 h-px bg-custom-gold mt-8" />
+
+                <p className=" text-gray-700 leading-relaxed font-light mt-8">
+                  Pacturn Africa was incorporated outside the commercial
+                  structure that defines most trustee institutions.
+                </p>
+
+                <div className="mt-12 flex flex-col gap-4">
+
+                  <Link
+                    to="/mandates"
+                    className="btn-primary w-fit"
+                  >
+                    View Our Mandates
+                  </Link>
+
+                  <Link
+                    to="/team"
+                    className="btn-secondary w-fit"
+                  >
+                    Meet the Team
+                  </Link>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            {/* RIGHT CONTENT */}
+            <div className="lg:col-span-8 space-y-24">
+
+              {/* OUR POSITION */}
+              <div className="border-b border-gray-200 pb-16">
+
+                <h1 className="text-2xl text-custom-navy">
+                  Our Position
+                </h1>
+
+
+
+                <div className="w-12 h-px bg-custom-gold my-2" />
+
+                <div className="space-y-6 text-custom-navy leading-loose font-light">
+
+                  <p>
+                    We were incorporated to operate outside that structure.
+                    Pacturn Africa has no affiliated bank, no fund manager
+                    parent, and no custodian affiliate. In every mandate we
+                    hold, our interest is singular: the interest of the
+                    beneficiaries.
+                  </p>
+
+                  <p>
+                    That means we can do what an independent trustee is
+                    required to do — challenge fund managers without commercial
+                    constraint, scrutinise administrators without institutional
+                    hesitation, and act in contested situations without
+                    reference to a wider group interest.
+                  </p>
+
+                </div>
+
+              </div>
+
+              {/* FIDUCIARY DUTY */}
+              <div className="border-b border-gray-200 pb-16">
+
+                <h1 className="text-2xl text-custom-navy">
+                  Fiduciary Duty
+                </h1>
+
+                <div className="w-12 h-px bg-custom-gold my-2" />
+
+                <div className="space-y-6 text-custom-navy leading-loose font-light">
+
+                  <p>
+                    The trustee&apos;s legal duty is to the beneficiaries.
+                    Where the interests of beneficiaries conflict with those of a sponsor, manager, or administrator — the trustee is required to act for the beneficiaries.
+                  </p>
+
+                  <p>
+                    Not to balance competing interests. Not to find a commercial accommodation. To act for the beneficiaries.
+                    Pacturn Africa enforces that duty without qualification.
+                  </p>
+
+                </div>
+
+              </div>
+
+              {/* HOW WE OPERATE */}
+              <div className="border-b border-gray-200 pb-16">
+
+                <h1 className="text-2xl text-custom-navy">
+                  How We Operate
+                </h1>
+
+                <div className="w-12 h-px bg-custom-gold my-2" />
+
+                <div className="space-y-6 text-custom-navy leading-loose font-light">
+
+                  <p>
+                    Every trustee decision is documented and minuted. Every file is maintained in inspection-ready condition as a standing operational standard — not assembled ahead of a regulatory visit.
+                  </p>
+
+                  <p>
+                    Our governance framework was built to satisfy the most demanding scrutiny: regulatory review, legal challenge, and independent audit. We apply that standard as a matter of course.
+                  </p>
+
+                </div>
+
+              </div>
+
+              {/* INSTITUTIONAL CONTINUITY */}
+              <div>
+
+                <h1 className="text-2xl text-custom-navy">
+                  Institutional Continuity
+                </h1>
+
+                <div className="w-12 h-px bg-custom-gold my-2" />
+
+                <div className="space-y-6 text-custom-navy leading-loose font-light">
+
+                  <p>
+                    Pacturn Africa is structured so the institution does not
+                    depend on any single director or officer.
+                    Operating standards are documented and role-agnostic.
+                    Governance authority rests with the Board and the
+                    institution.
+                  </p>
+
+                  <p>
+                    That is what makes a corporate trustee different from an
+                    individual trustee — and what makes institutional continuity
+                    real rather than claimed.
+                  </p>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
       </section>
 
       <Footer />
@@ -164,72 +300,3 @@ function AboutUs() {
 }
 
 export default AboutUs;
-
-
-
-
-{/* <div className="w-16 h-0.5 bg-custom-gold mt-2" /> */ }
-
-{/* <div className="mt-10 space-y-6  max-w-3xl font-light">
-            <p>
-              In every mature capital market, trusteeship is a distinct profession — held at arm&apos;s length from the parties whose interests it must reconcile. Across much of Africa, that separation has been imperfect.
-            </p>
-            <p>
-              Trustee duties have too often been bundled with custody, asset management, or sponsor relationships, eroding the independence that gives the office its meaning.
-            </p>
-            <p>
-              Pacturn Africa was incorporated in Kenya to address this directly. We act exclusively as a corporate trustee. We hold no funds under management, take no custody mandates, and earn no commissions from the parties whose conduct we are appointed to oversee.
-            </p>
-          </div> */}
-{/* <blockquote className="border-l-2 border-custom-gold pl-6 mt-14 max-w-3xl font-light">
-            <p className="type-quote">
-              The office of trustee is a quiet one. It is also, when properly held, the most consequential office in the financial chain.
-            </p>
-          </blockquote> */}
-
-// const pillars = [
-//   { number: "01", title: "Independence", description: "Unaffiliated with any bank, fund manager, custodian or financial group. Trust without conflict." },
-//   { number: "02", title: "Fiduciary primacy", description: "The interests of beneficiaries take precedence over commercial convenience, in every decision." },
-//   { number: "03", title: "Institutional discipline", description: "Documented processes, codified governance, and an audit trail worthy of regulatory scrutiny." },
-//   { number: "04", title: "Regulatory rigour", description: "Operating within the letter and spirit of the laws governing trusteeship in each jurisdiction we serve." },
-//   { number: "05", title: "Member alignment", description: "Trustee meetings, reporting and communications structured around the people for whom assets are held." },
-//   { number: "06", title: "Pan-African outlook", description: "A mandate that extends across East and Southern Africa, with local sensibility at every appointment." },
-//   { number: "07", title: "Quiet excellence", description: "We measure ourselves not by visibility but by the durability of the trusts we hold." },
-// ];
-{/* PILLARS */ }
-{/* <section className="py-28">
-        <div className="max-w-6xl mx-auto px-6">
-
-          <h2 className="text-3xl text-custom-gold font-light">
-            Seven Founding Pillars
-          </h2>
-
-          <p className="text-lg font-light mt-6 max-w-2xl">
-            The principles upon which the institution was constituted.
-          </p>
-
-          <div className="w-16 h-0.5 bg-custom-gold mt-2" />
-
-          <div className="mt-16 divide-y border-y font-light">
-
-            {pillars.map((p) => (
-              <div
-                key={p.number}
-                className="grid md:grid-cols-12 gap-6 py-10 hover:bg-gray-100 transition px-2"
-              >
-                <div className="md:col-span-1 text-custom-gold font-heading text-xl">
-                  {p.number}
-                </div>
-                <div className="md:col-span-3 font-heading text-lg text-custom-navy">
-                  {p.title}
-                </div>
-                <div className="md:col-span-8 ">
-                  {p.description}
-                </div>
-              </div>
-            ))}
-
-          </div>
-
-        </div>
-      </section> */}
