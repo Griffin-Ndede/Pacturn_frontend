@@ -220,8 +220,7 @@ function Home() {
                                 loading="lazy"
                             />
 
-                            <div className="btn-secondary hidden md:block absolute -bottom-6 left-6">
-                                 {/* bg-white border border-gray-200 px-6 py-4 text-sm font-light rounded-2xl shadow-lg */}
+                            <div className="btn-secondary hidden md:block absolute -bottom-6 left-6 bg-white border border-gray-200 px-6 py-4 text-sm font-light rounded-2xl shadow-lg">
                                 Vol. I — Inaugural Series
                             </div>
                         </div>
