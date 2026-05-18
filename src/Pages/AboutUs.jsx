@@ -41,13 +41,13 @@ function AboutUs() {
                   </span>
                 </p>
 
-                <p className=" text-gray-700 leading-loose font-light">
+                <p className=" text-custom-navy leading-loose font-light">
                   Not a trustee function within a bank. Not a fiduciary
                   service line within a financial group. A standalone
                   institution whose only mandate is governance.
                 </p>
 
-                <p className=" text-gray-700 leading-loose font-light">
+                <p className=" text-custom-navy leading-loose font-light">
                   Pacturn Africa carries no asset management mandate, holds no
                   assets in custody, and has no lending interest in any
                   structure where it acts as trustee.
@@ -146,7 +146,7 @@ function AboutUs() {
 
                 <div className="w-16 h-px bg-custom-gold mt-8" />
 
-                <p className=" text-gray-700 leading-relaxed font-light mt-8">
+                <p className=" text-custom-navy leading-relaxed font-light mt-8">
                   Pacturn Africa was incorporated outside the commercial
                   structure that defines most trustee institutions.
                 </p>
